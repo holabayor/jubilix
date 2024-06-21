@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jubilix - Birthday Reminder App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main content container -->
+    <div class="main__container">
+      <div>
+        <h1 class="header__text">Jubilix</h1>
+        <p class="subtitle__text">birthday reminder app</p>
+      </div>
+      <form id="birthdayForm">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email address"
+          required
+        />
+        <input
+          type="date"
+          name="dateOfBirth"
+          id="dateOfBirth"
+          required
+          style="max-width: 150px"
+        />
+        <div></div>
+        <button id="submitButton" type="submit">Add User</button>
+      </form>
+    </div>
+
+    <!-- Toast container -->
+    <div class="toast" id="toast">
+      <div class="slider"></div>
+      <p id="message">Sample text</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2024. Made with ❤ by the villageDev</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
